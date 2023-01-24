@@ -1,0 +1,60 @@
+body {
+   background-color: lightgreen;
+   font-family: Cinzel;
+}
+
+.page-container{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-direction: column;
+}
+
+.menu-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content:space-around;
+}
+
+.title-cntr> h3{
+    font-size: 50px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10%;
+    padding: 3% 5% 1% 5%;
+}
+.asset-list{
+    width: 150px;
+    height: auto;
+}
+.asset-list > select{
+    background-color: transparent;
+    width: 100%;
+    height: 40px;
+    border-radius: 10%;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+
+.payout-expense-cntr{
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.payout, .expense {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+.chart-cntr{
+    margin-top: 10%;
+    width: 70%;
+}
+
+.chart{
+    width: 100%;
+    height: 100%;
+}

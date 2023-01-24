@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Investment Finder</title>
+        <link rel="stylesheet" href="./style.css" type="text/css"/>
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel@1&display=swap" rel="stylesheet"> -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    </head>
+     <body>
+          <div class="page-container">
+              <h1>Investment Finder</h1>
+              <div class="menu-container">        
+                <div id="search-box">
+                    <form id="search-stock">
+                      <input type="text" name="symbol" id="search-bar" placeholder="Search by symbol">
+                      <button type= "submit" id="submit">Search</button>
+                    </form>
+                </div>
+                <div class="date-filter">
+                  <label>Start date: <input type="date" id="start-date"></label>
+                  <label>End date: <input type="date" id="end-date"></label>
+                </div>
+                <div class="stock-suggestions">
+                  <label for="stock-suggestions-input">Stock Suggestions:</label>
+                  <input type="text" name="stock-suggestions-input" id="stock-suggestions-input" placeholder="Enter keyword">
+                  <button type="button" id="suggestions-button">Get Suggestions</button>
+                  <label for="stock-suggestions-select">Select a stock:</label>
+                  <select name="stock-suggestions-select" id="stock-suggestions-select">
+                      <option value="" disabled selected>Select a stock</option>
+                  </select>
+                  <label for="stock-symbol-input">Stock Symbol:</label>
+                  <input type="text" name="stock-symbol-input" id="stock-symbol-input" placeholder="Stock symbol will appear here" disabled>
+                </div>   
+              </div>
+              <div class="chart-cntr">
+                <div class="chart">
+                  <canvas id="myChart"></canvas>
+                </div>
+              </div>
+            </div>
+            <!-- JavaScript -->
+            <script src="./app.js"></script>
+          </body>
+          
+          </html>
+          
